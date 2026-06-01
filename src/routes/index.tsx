@@ -4,6 +4,11 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { Hero } from "@/components/Hero";
 import { Problem } from "@/components/Problem";
 import { Solution } from "@/components/Solution";
+import { Comparison } from "@/components/Comparison";
+import { FoundingOffer } from "@/components/FoundingOffer";
+import { About } from "@/components/About";
+import { FAQ } from "@/components/FAQ";
+import { FinalCTA } from "@/components/FinalCTA";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,6 +40,11 @@ function Index() {
         <Hero />
         <Problem />
         <Solution />
+        <Comparison />
+        <FoundingOffer />
+        <About />
+        <FAQ />
+        <FinalCTA />
       </main>
       <SiteFooter />
     </div>

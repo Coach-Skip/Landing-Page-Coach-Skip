@@ -14,6 +14,12 @@ const assets = fs.readdirSync(assetsDir);
 const cssFiles = assets.filter((f) => f.endsWith(".css"));
 const jsFiles = assets.filter((f) => f.endsWith(".js"));
 
+// Inject the minimal $_TSR bootstrap object TanStack Start requires on the client.
+// Without it, the app throws "Invariant failed" immediately on load.
+// With matches:[] and no lastMatchId, the router enters SPA mode and loads the
+// current route client-side — no SSR dehydration data needed.
+const tsrBootstrap = `window.$_TSR={router:{matches:[],manifest:null,dehydratedData:null},buffer:[],h:function(){}};`;
+
 const html = `<!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -22,9 +28,9 @@ const html = `<!DOCTYPE html>
     <title>Coach Skip — Le coach nutritionnel IA qui te pilote</title>
     <meta name="description" content="IA personnelle qui génère ton plan nutrition, l'adapte chaque jour à ta vraie vie, 5x moins cher qu'un coach. Founding Member 19€/mois à vie." />
     ${cssFiles.map((f) => `<link rel="stylesheet" crossorigin href="/assets/${f}" />`).join("\n    ")}
+    <script>${tsrBootstrap}</script>
   </head>
   <body>
-    <div id="root"></div>
     ${jsFiles.map((f) => `<script type="module" crossorigin src="/assets/${f}"></script>`).join("\n    ")}
   </body>
 </html>`;

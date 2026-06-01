@@ -1,0 +1,27 @@
+import fs from "fs";
+import path from "path";
+
+const distClient = "dist/client";
+const assetsDir = path.join(distClient, "assets");
+
+const assets = fs.readdirSync(assetsDir);
+const cssFiles = assets.filter((f) => f.endsWith(".css"));
+const jsFiles = assets.filter((f) => f.endsWith(".js"));
+
+const html = `<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coach Skip — Le coach nutritionnel IA qui te pilote</title>
+    <meta name="description" content="IA personnelle qui génère ton plan nutrition, l'adapte chaque jour à ta vraie vie, 5x moins cher qu'un coach. Founding Member 19€/mois à vie." />
+    ${cssFiles.map((f) => `<link rel="stylesheet" crossorigin href="/assets/${f}" />`).join("\n    ")}
+  </head>
+  <body>
+    <div id="root"></div>
+    ${jsFiles.map((f) => `<script type="module" crossorigin src="/assets/${f}"></script>`).join("\n    ")}
+  </body>
+</html>`;
+
+fs.writeFileSync(path.join(distClient, "index.html"), html);
+console.log(`Generated dist/client/index.html (${cssFiles.length} CSS, ${jsFiles.length} JS)`);

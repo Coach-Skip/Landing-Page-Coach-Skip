@@ -5,7 +5,7 @@ export function About() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-7">
             <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-primary">
-              06 — À propos
+              06 - À propos
             </div>
             <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl">
               Pourquoi je sors Coach Skip{" "}
@@ -15,7 +15,7 @@ export function About() {
             <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
               <p>
                 Je m'appelle <span className="text-foreground font-semibold">Gaspard</span>.
-                Ingénieur du numérique de formation, et je tracke mes calories
+                Ingénieur du numérique de formation, et je traque mes calories
                 tous les jours depuis 5 ans. Pas par obsession mais par méthode.
               </p>
               <p>
@@ -26,7 +26,8 @@ export function About() {
                   et double vice-champion de France de Force Athlétique.
                 </span>{" "}
                 Tableaux d'ajustement quotidien, scripts d'estimation de macros,
-                prompts qui me sortaient un plan repas à partir de mon frigo.
+                prompts qui me sortaient un plan repas à partir de mon frigo. 
+                Jusqu'au GPT personnalisé qui calculait les macros de mes plats au resto.
                 Ça marchait bien pour moi. Au point où des gens autour de moi
                 m'ont demandé « comment tu fais ».
               </p>
@@ -41,7 +42,7 @@ export function About() {
                 <span className="text-foreground">Skip Le Sportif Gourmand</span>,
                 un compte de contenu nutrition/sport. J'évolue dans cet
                 écosystème tous les jours. Coach Skip n'est pas un side-project
-                lancé sur un coup de tête — c'est un réel outil que j'utilise au
+                lancé sur un coup de tête,  c'est un réel outil que j'utilise au
                 quotidien.
               </p>
             </div>

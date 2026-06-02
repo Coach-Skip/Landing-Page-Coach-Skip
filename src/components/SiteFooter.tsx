@@ -32,7 +32,7 @@ export function SiteFooter() {
         </div>
         <div className="flex flex-col gap-2 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-            © 2026 Coach Skip — Tous droits réservés
+            © 2026 Coach Skip - Tous droits réservés
           </p>
           <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
             Fait avec méthode à Paris

@@ -11,7 +11,7 @@ export function SiteHeader() {
         </Link>
 
         <a
-          href="#founding-member"
+          href="https://buy.stripe.com/fZu28taaC8GO9go2bE4AU00"
           className="inline-flex items-center rounded-full bg-foreground px-4 py-2 font-mono text-[11px] uppercase tracking-wider text-background transition-colors hover:bg-primary hover:text-primary-foreground"
         >
           Devenir Founding Member

@@ -12,14 +12,14 @@ function ChatMockup() {
       </div>
 
       <div className="space-y-3">
-        {/* User bubble — right */}
+        {/* User bubble - right */}
         <div className="flex justify-end">
           <div className="max-w-[80%] rounded-2xl rounded-br-sm border border-border bg-transparent px-4 py-2.5 text-sm text-foreground">
             100g de riz, 150g de poulet ce midi
           </div>
         </div>
 
-        {/* AI bubble — left */}
+        {/* AI bubble - left */}
         <div className="flex justify-start">
           <div
             className="max-w-[85%] rounded-2xl rounded-bl-sm border border-primary/30 px-4 py-2.5 text-sm text-foreground"
@@ -68,7 +68,7 @@ export function Solution() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-3xl">
           <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-primary">
-            03 — La solution
+            03 - La solution
           </div>
           <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             Coach Skip, c'est un coach nutritionnel personnel{" "}
@@ -112,7 +112,7 @@ export function Solution() {
             </h3>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Voix, photo ou texte. Coach Skip comprend, calcule, et te dit ce
-              qu'il te reste — puis te propose la suite.
+              qu'il te reste puis te propose la suite.
             </p>
           </div>
           <div className="lg:col-span-7">

@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 lg:grid-cols-12 lg:gap-10">
-        {/* Left — content */}
+        {/* Left - content */}
         <div className="animate-reveal lg:col-span-7">
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-accent/40 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
             <span className="h-1.5 w-1.5 animate-pulse-dot rounded-full bg-primary" aria-hidden />
@@ -18,18 +18,18 @@ export function Hero() {
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             Une IA personnelle qui te génère ton plan, l'adapte chaque jour à ta
-            vraie vie, et t'accompagne au quotidien — mais pour 5x moins cher
+            vraie vie, et t'accompagne au quotidien mais pour 5x moins cher
             qu'un vrai coach.
           </p>
 
           <div className="mt-10 flex flex-col items-start gap-4">
             <a
               id="founding-member"
-              href="#founding-member"
+              href="https://buy.stripe.com/fZu28taaC8GO9go2bE4AU00"
               className="group inline-flex items-center gap-2 rounded-full bg-primary px-6 py-4 font-display text-base font-semibold text-primary-foreground shadow-[0_10px_40px_-10px_var(--color-primary)] transition-transform hover:-translate-y-0.5"
             >
               <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
-              Devenir Founding Member — 19€/mois à vie
+              Devenir Founding Member : 19€/mois à vie
             </a>
             <p className="max-w-md font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
               50 places. Soyez parmi les premiers. Tarif bloqué à vie même après
@@ -38,7 +38,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right — video placeholder 16:9 */}
+        {/* Right - video placeholder 16:9 */}
         <div className="animate-reveal lg:col-span-5 lg:pt-2">
           <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-border bg-accent">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,oklch(0.25_0_0)_0%,transparent_60%)]" />

@@ -3,7 +3,7 @@ import { ShieldCheck } from "lucide-react";
 const bonuses = [
   {
     n: "01",
-    title: "Coach Skip à 19€/mois — à vie",
+    title: "Coach Skip à 19€/mois à vie",
     body: "Même si le prix public monte à 39€, 49€ ou 69€ dans 6 mois, tu restes bloqué·e à 19€/mois tant que tu es abonné·e.",
   },
   {
@@ -29,7 +29,7 @@ export function FoundingOffer() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-3xl">
           <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-primary">
-            05 — Founding Member
+            05 - Founding Member
           </div>
           <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             50 places. Le tarif Founding Member{" "}
@@ -63,10 +63,10 @@ export function FoundingOffer() {
 
         <div className="mt-12 flex flex-col items-start gap-3">
           <a
-            href="#founding-member"
+            href="https://buy.stripe.com/fZu28taaC8GO9go2bE4AU00"
             className="inline-flex items-center rounded-full bg-primary px-6 py-3.5 font-mono text-[12px] uppercase tracking-wider text-primary-foreground transition-transform hover:scale-[1.02]"
           >
-            → Devenir Founding Member — 19€/mois à vie
+            → Devenir Founding Member : 19€/mois à vie
           </a>
           <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
             Moins de 50 places restantes. Résiliation à tout moment via Stripe.

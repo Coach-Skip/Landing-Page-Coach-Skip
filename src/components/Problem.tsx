@@ -3,7 +3,7 @@ export function Problem() {
     <section className="border-t border-border py-24 sm:py-32">
       <div className="mx-auto max-w-4xl px-6">
         <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-primary">
-          02 — Le problème
+          02 - Le problème
         </div>
         <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
           Tu connais <span className="italic">cette galère.</span>

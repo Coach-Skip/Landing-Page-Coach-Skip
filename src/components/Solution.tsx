@@ -15,7 +15,7 @@ function ChatMockup() {
         {/* User bubble - right */}
         <div className="flex justify-end">
           <div className="max-w-[80%] rounded-2xl rounded-br-sm border border-border bg-transparent px-4 py-2.5 text-sm text-foreground">
-            100g de riz, 150g de poulet ce midi
+            100g de riz, 150g de steak ce midi et une mousse au chocolat en dessert.
           </div>
         </div>
 

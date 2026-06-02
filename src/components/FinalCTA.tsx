@@ -23,6 +23,8 @@ export function FinalCTA() {
         <div className="mt-12 flex flex-col items-center gap-3">
           <a
             href="https://buy.stripe.com/fZu28taaC8GO9go2bE4AU00"
+            target="_blank"                           
+            rel="noopener noreferrer"
             className="inline-flex items-center rounded-full bg-primary px-7 py-4 font-mono text-[12px] uppercase tracking-wider text-primary-foreground transition-transform hover:scale-[1.02] sm:text-[13px]"
           >
             → Devenir Founding Member : 19€/mois à vie

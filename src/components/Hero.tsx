@@ -26,6 +26,8 @@ export function Hero() {
             <a
               id="founding-member"
               href="https://buy.stripe.com/fZu28taaC8GO9go2bE4AU00"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 rounded-full bg-primary px-6 py-4 font-display text-base font-semibold text-primary-foreground shadow-[0_10px_40px_-10px_var(--color-primary)] transition-transform hover:-translate-y-0.5"
             >
               <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>

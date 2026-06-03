@@ -13,13 +13,13 @@ import { FinalCTA } from "@/components/FinalCTA";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Coach Skip — Le coach nutritionnel IA qui te pilote" },
+      { title: "Coach Skip - Le coach nutritionnel IA qui te pilote" },
       {
         name: "description",
         content:
           "IA personnelle qui génère ton plan nutrition, l'adapte chaque jour à ta vraie vie, 5x moins cher qu'un coach. Founding Member 19€/mois à vie.",
       },
-      { property: "og:title", content: "Coach Skip — Le coach nutritionnel IA qui te pilote" },
+      { property: "og:title", content: "Coach Skip - Le coach nutritionnel IA qui te pilote" },
       {
         property: "og:description",
         content:

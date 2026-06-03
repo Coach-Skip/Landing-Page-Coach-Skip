@@ -3,7 +3,7 @@ const rows = [
   { criterion: "S'adapte chaque jour", others: "Non", coach: "Toutes les semaines", skip: "Oui, chaque jour" },
   { criterion: "Logging photo + vocal", others: "Partiel", coach: "Pas disponible", skip: "Oui" },
   { criterion: "Dispo 24/7", others: "Oui, mais passif", coach: "Non, créneaux fixes", skip: "Oui, et proactif" },
-  { criterion: "Prix", others: "5–15€/mois", coach: "80–200€/mois", skip: "19€/mois (FM) — 39€+ ensuite" },
+  { criterion: "Prix", others: "5-15€/mois", coach: "80-200€/mois", skip: "19€/mois (FM), 39€+ ensuite" },
 ];
 
 export function Comparison() {

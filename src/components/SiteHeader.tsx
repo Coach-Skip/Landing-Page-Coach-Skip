@@ -11,7 +11,7 @@ export function SiteHeader() {
         </Link>
 
         <a
-          href="https://buy.stripe.com/fZu28taaC8GO9go2bE4AU00"
+          href="https://buy.stripe.com/3cIcN7fuWg9g1NW5nQ4AU03"
           target="_blank"                           
           rel="noopener noreferrer"
           className="inline-flex items-center rounded-full bg-foreground px-4 py-2 font-mono text-[11px] uppercase tracking-wider text-background transition-colors hover:bg-primary hover:text-primary-foreground"

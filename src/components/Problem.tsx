@@ -29,7 +29,7 @@ export function Problem() {
             quand tu craques.
           </p>
           <p>
-            Tu sais qu'un vrai coach nutritionnel résoudrait ça. Sauf qu'il
+            Tu sais qu'un coach nutritionnel humain résoudrait ça. Sauf qu'il
             coûte 80 à 200€/mois et que tu vas pas mettre ça sur la table tous
             les mois.
           </p>

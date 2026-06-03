@@ -1,4 +1,5 @@
 import { ShieldCheck } from "lucide-react";
+import { PLACES_TOTAL, scarcityLine } from "@/lib/founding";
 
 const bonuses = [
   {
@@ -8,8 +9,8 @@ const bonuses = [
   },
   {
     n: "02",
-    title: "Onboarding 1-on-1 avec moi (45 min)",
-    body: "On configure ton plan ensemble, je comprends ton contexte, tu démarres avec un cadre sur mesure.",
+    title: "Mise en place en direct avec moi (45 min)",
+    body: "On configure ton plan ensemble, on cale tes objectifs et tes contraintes. Tu démarres avec un cadre sur mesure, pas un setup générique.",
   },
   {
     n: "03",
@@ -18,8 +19,8 @@ const bonuses = [
   },
   {
     n: "04",
-    title: "Influence sur la roadmap",
-    body: "Tu dis ce qui manque, je l'arbitre. Les Founding Members façonnent le produit final.",
+    title: "Tu demandes une fonction, je la priorise",
+    body: "Il te manque un format de logging, une intégration, un type de plan ? Tu me le dis, je l'arbitre en haut de la roadmap. Les Founding Members façonnent ce que Coach Skip devient.",
   },
 ];
 
@@ -32,12 +33,13 @@ export function FoundingOffer() {
             05 - Founding Member
           </div>
           <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            50 places. Le tarif Founding Member{" "}
+            {PLACES_TOTAL} places. Le tarif Founding Member{" "}
             <span className="italic">ne reviendra jamais.</span>
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Coach Skip est en bêta privée. Je prends 50 Founding Members pour
-            finaliser le produit avec moi. Tu obtiens un tarif et un accès que
+            Coach Skip ouvre {PLACES_TOTAL} places fondateurs avant la sortie
+            publique. Je prends ces {PLACES_TOTAL} Founding Members pour
+            finaliser le produit avec eux. Tu obtiens un tarif et un accès que
             personne d'autre n'aura ensuite.
           </p>
         </div>
@@ -63,7 +65,7 @@ export function FoundingOffer() {
 
         <div className="mt-12 flex flex-col items-start gap-3">
           <a
-            href="https://buy.stripe.com/fZu28taaC8GO9go2bE4AU00"
+            href="https://buy.stripe.com/3cIcN7fuWg9g1NW5nQ4AU03"
             target="_blank"                           
             rel="noopener noreferrer"
             className="inline-flex items-center rounded-full bg-primary px-6 py-3.5 font-mono text-[12px] uppercase tracking-wider text-primary-foreground transition-transform hover:scale-[1.02]"
@@ -71,7 +73,7 @@ export function FoundingOffer() {
             → Devenir Founding Member : 19€/mois à vie
           </a>
           <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-            Moins de 50 places restantes. Résiliation à tout moment via Stripe.
+            {scarcityLine()} Résiliation à tout moment via Stripe.
           </p>
         </div>
 

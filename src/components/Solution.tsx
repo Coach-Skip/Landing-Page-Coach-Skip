@@ -76,9 +76,9 @@ export function Solution() {
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Pas un tracker. Pas un journal alimentaire. Un coach qui pilote ta
-            nutrition au jour le jour comme un vrai coach humain le ferait.
-            Sauf qu'il est dispo 24/7, qu'il s'adapte à ta vie en temps réel,
-            et qu'il coûte 5x moins cher.
+            nutrition au jour le jour comme un coach humain le ferait. Sauf
+            qu'il est dispo 24/7, qu'il s'adapte à ta vie en temps réel, et
+            qu'il tient dans ta poche.
           </p>
         </div>
 

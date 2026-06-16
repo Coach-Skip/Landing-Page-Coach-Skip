@@ -55,7 +55,7 @@ export function Hero() {
 
           <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.02] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
             Le coach nutritionnel{" "}
-            <span className="italic text-foreground/90">qui te tient la main, chaque jour.</span>
+            <span className="text-primary text-glow-gold">qui te tient la main, chaque jour.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">

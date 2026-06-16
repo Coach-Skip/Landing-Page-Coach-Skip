@@ -72,7 +72,7 @@ export function Solution() {
           </div>
           <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             Coach Skip, c'est un coach nutritionnel personnel{" "}
-            <span className="italic">mais porté par une IA.</span>
+            <span className="text-primary">mais porté par une IA.</span>
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Pas un tracker. Pas un journal alimentaire. Un coach qui pilote ta
@@ -108,7 +108,7 @@ export function Solution() {
               Démo · Bloc 02
             </div>
             <h3 className="mt-3 font-display text-2xl font-bold leading-tight text-foreground sm:text-3xl">
-              Logger un repas, c'est une phrase. <span className="italic">Pas un formulaire.</span>
+              Logger un repas, c'est une phrase. <span className="text-primary">Pas un formulaire.</span>
             </h3>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Voix, photo ou texte. Coach Skip comprend, calcule, et te dit ce

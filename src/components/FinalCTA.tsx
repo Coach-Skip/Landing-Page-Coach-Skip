@@ -9,7 +9,7 @@ export function FinalCTA() {
         </div>
         <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
           {PLACES_TOTAL} Founding Members.<br />
-          Le tarif <span className="italic">à vie.</span><br />
+          Le tarif <span className="text-primary text-glow-gold">à vie.</span><br />
           Le risque <span className="text-primary">sur moi.</span>
         </h2>
 

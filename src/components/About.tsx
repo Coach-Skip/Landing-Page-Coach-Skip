@@ -9,7 +9,7 @@ export function About() {
             </div>
             <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl">
               Pourquoi je sors Coach Skip{" "}
-              <span className="italic">et pourquoi maintenant.</span>
+              <span className="text-primary">et pourquoi maintenant.</span>
             </h2>
 
             <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground sm:text-lg">

@@ -34,7 +34,7 @@ export function FoundingOffer() {
           </div>
           <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             {PLACES_TOTAL} places. Le tarif Founding Member{" "}
-            <span className="italic">ne reviendra jamais.</span>
+            <span className="text-primary">ne reviendra jamais.</span>
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Coach Skip ouvre {PLACES_TOTAL} places fondateurs avant la sortie

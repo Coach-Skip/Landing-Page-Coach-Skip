@@ -41,7 +41,7 @@ export function FAQ() {
         </div>
         <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
           Tu as forcément des questions.{" "}
-          <span className="italic">Voici les réponses aux objections qui reviennent.</span>
+          <span className="text-primary">Voici les réponses aux objections qui reviennent.</span>
         </h2>
 
         <Accordion type="single" collapsible className="mt-12 w-full">

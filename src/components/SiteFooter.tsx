@@ -10,7 +10,7 @@ export function SiteFooter() {
     <footer className="border-t border-border">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-12">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-          <div className="inline-flex items-baseline gap-1 font-display font-extrabold italic uppercase tracking-tight text-foreground">
+          <div className="inline-flex items-baseline gap-1 font-display font-extrabold uppercase tracking-tight text-foreground">
             <span>Coach</span>
             <span
               className="h-1.5 w-1.5 translate-y-[-2px] rounded-full bg-primary"
@@ -34,7 +34,12 @@ export function SiteFooter() {
           <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
             © 2026 Coach Skip - Tous droits réservés
           </p>
-          <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
+          <p className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
+            <span className="flag-fr" aria-hidden>
+              <i className="b" />
+              <i className="w" />
+              <i className="r" />
+            </span>
             Fait avec méthode à Paris
           </p>
         </div>

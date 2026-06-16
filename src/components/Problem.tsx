@@ -6,7 +6,7 @@ export function Problem() {
           02 - Le problème
         </div>
         <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-          Tu connais <span className="italic">cette galère.</span>
+          Tu connais <span className="text-primary">cette galère.</span>
         </h2>
 
         <div className="mt-10 space-y-6 text-base leading-relaxed text-muted-foreground sm:text-lg">

@@ -2,7 +2,7 @@
 @source "../src";
 @import "tw-animate-css";
 
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,800;1,900&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
@@ -32,34 +32,65 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  --font-display: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+  /* Tokens de marque Le Sportif Gourmand (exposés en utilitaires Tailwind) */
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-gold-soft: var(--gold-soft);
+  --color-cream: var(--cream);
+  --color-success: var(--brand-green);
+  --color-adversary: var(--brand-red);
+
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-mono: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
   --radius: 0.5rem;
 
-  /* Coach Skip — Performance Editorial (dark) */
-  --background: oklch(0.13 0 0);          /* #080808 */
-  --foreground: oklch(0.96 0 0);          /* #f2f2f2 */
-  --card: oklch(0.16 0 0);
-  --card-foreground: oklch(0.96 0 0);
-  --popover: oklch(0.16 0 0);
-  --popover-foreground: oklch(0.96 0 0);
-  --primary: oklch(0.68 0.22 38);         /* #ff4d00 */
-  --primary-foreground: oklch(0.13 0 0);
-  --secondary: oklch(0.21 0 0);
-  --secondary-foreground: oklch(0.96 0 0);
-  --muted: oklch(0.21 0 0);
-  --muted-foreground: oklch(0.62 0 0);    /* #888 */
-  --accent: oklch(0.21 0 0);              /* #1a1a1a */
-  --accent-foreground: oklch(0.96 0 0);
-  --destructive: oklch(0.6 0.22 25);
-  --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(1 0 0 / 8%);
-  --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.68 0.22 38);
+  /* ============================================================
+     COACH SKIP — Identité "Le Sportif Gourmand" (sombre + or)
+     Charte: BRAND_KIT_LSG.md / lsg-tokens.css
+     ============================================================ */
+
+  /* Couleurs de marque brutes */
+  --gold:        #C8A24C;   /* OR principal : titres, accents, mots-clés, mark */
+  --gold-bright: #E8B23A;   /* OR vif : highlight */
+  --gold-soft:   #F5E9C8;   /* OR crème : gros chiffres */
+  --cream:       #ECE5D3;   /* blanc cassé : texte courant clair */
+  --warm-muted:  #B9B2A6;   /* gris chaud : texte secondaire */
+  --warm-muted-2:#9C958A;   /* gris chaud foncé : mentions */
+  --brand-red:   #DA291C;   /* ROUGE : adversaire, négatif, valeurs barrées */
+  --brand-green: #3FA34D;   /* VERT : positif, victoire, validé */
+  --fr-blue:     #0055A4;
+  --fr-white:    #ECE5D3;
+  --fr-red:      #EF4135;
+
+  /* Fonds sombres chauds */
+  --bg-deep:     #0B0907;   /* fond global (bas du dégradé carte) */
+  --bg-card:     #16120D;   /* carte / surface */
+  --bg-lift:     #1A150E;   /* surface légèrement relevée (accent) */
+
+  /* Mapping tokens applicatifs */
+  --background: var(--bg-deep);
+  --foreground: var(--cream);
+  --card: var(--bg-card);
+  --card-foreground: var(--cream);
+  --popover: var(--bg-card);
+  --popover-foreground: var(--cream);
+  --primary: var(--gold);
+  --primary-foreground: var(--bg-deep);
+  --secondary: var(--bg-card);
+  --secondary-foreground: var(--cream);
+  --muted: var(--bg-card);
+  --muted-foreground: var(--warm-muted);
+  --accent: var(--bg-lift);
+  --accent-foreground: var(--cream);
+  --destructive: var(--brand-red);
+  --destructive-foreground: var(--gold-soft);
+  --border: rgba(200, 162, 76, 0.16);   /* hairline doré */
+  --input: rgba(200, 162, 76, 0.24);
+  --ring: var(--gold);
 }
 
 @layer base {
@@ -73,7 +104,34 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
+
+  ::selection {
+    background: var(--gold);
+    color: var(--bg-deep);
+  }
 }
+
+/* ============================================================
+   UTILITAIRES DE MARQUE
+   ============================================================ */
+
+/* Halo doré derrière un texte d'impact (chiffres, mots punch) */
+.text-glow-gold {
+  text-shadow: 0 6px 30px rgba(0, 0, 0, 0.75), 0 0 50px rgba(200, 162, 76, 0.35);
+}
+
+/* Barre signature drapeau FR (3 bandes) */
+.flag-fr {
+  display: inline-flex;
+  height: 6px;
+  width: 56px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.flag-fr i { display: block; flex: 1; }
+.flag-fr .b { background: var(--fr-blue); }
+.flag-fr .w { background: var(--fr-white); }
+.flag-fr .r { background: var(--fr-red); }
 
 @keyframes reveal-up {
   from { opacity: 0; transform: translateY(16px); }

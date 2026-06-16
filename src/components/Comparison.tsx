@@ -16,7 +16,7 @@ export function Comparison() {
           </div>
           <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             Tu te demandes en quoi c'est différent de ce que tu as{" "}
-            <span className="italic">déjà essayé.</span>
+            <span className="text-primary">déjà essayé.</span>
           </h2>
         </div>
 
@@ -47,7 +47,7 @@ export function Comparison() {
                 <div className={`col-span-3 px-5 py-5 text-sm text-muted-foreground ${i > 0 ? "border-t border-border" : ""}`}>
                   {r.others}
                 </div>
-                <div className={`col-span-3 px-5 py-5 text-sm text-muted-foreground ${i > 0 ? "border-t border-border" : ""}`}>
+                <div className={`col-span-3 px-5 py-5 text-sm ${r.criterion === "Prix" ? "font-semibold text-destructive" : "text-muted-foreground"} ${i > 0 ? "border-t border-border" : ""}`}>
                   {r.coach}
                 </div>
                 <div
@@ -77,7 +77,7 @@ export function Comparison() {
                 </div>
                 <div className="flex justify-between gap-4">
                   <dt className="text-muted-foreground">Coach humain</dt>
-                  <dd className="text-right text-foreground">{r.coach}</dd>
+                  <dd className={`text-right ${r.criterion === "Prix" ? "font-semibold text-destructive" : "text-foreground"}`}>{r.coach}</dd>
                 </div>
                 <div
                   className="-mx-2 mt-2 flex justify-between gap-4 rounded-md border border-primary/40 px-2 py-2"

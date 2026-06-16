@@ -77,16 +77,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { name: "theme-color", content: "#0B0907" },
+      { title: "Coach Skip — Le coach nutritionnel IA qui te pilote" },
+      {
+        name: "description",
+        content:
+          "IA personnelle qui génère ton plan nutrition, l'adapte chaque jour à ta vraie vie, 5x moins cher qu'un coach. Founding Member 19€/mois à vie.",
+      },
+      { name: "author", content: "Gaspard — Coach Skip" },
+      { property: "og:title", content: "Coach Skip — Le coach nutritionnel IA qui te pilote" },
+      {
+        property: "og:description",
+        content:
+          "IA personnelle qui génère ton plan nutrition, l'adapte chaque jour à ta vraie vie, 5x moins cher qu'un coach.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       {
         rel: "stylesheet",
         href: appCss,

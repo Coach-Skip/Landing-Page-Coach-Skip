@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Formulaire de candidature</title>
+  </head>
+  <body>
+    <!--
+      Déclaration du formulaire pour Netlify Forms. Ne pas supprimer.
+      Le site étant rendu côté client, Netlify ne voit pas le formulaire React
+      (src/components/Candidature.tsx) : il le détecte grâce à ce fichier.
+      Le nom du formulaire et les noms des champs doivent rester identiques
+      à ceux du composant React et de PILOT_FORM_NAME (src/lib/offer.ts).
+    -->
+    <form name="candidature-pilote" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="bot-field" />
+      <input type="text" name="prenom" />
+      <input type="number" name="age" />
+      <input type="email" name="email" />
+      <textarea name="objectif"></textarea>
+      <textarea name="blocage"></textarea>
+      <select name="temps">
+        <option value="moins-de-5-min">Moins de 5 minutes</option>
+        <option value="5-10-min">5 à 10 minutes</option>
+        <option value="plus-de-10-min">Plus de 10 minutes</option>
+      </select>
+    </form>
+  </body>
+</html>

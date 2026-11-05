@@ -1,6 +1,12 @@
 import { useRef, useState } from "react";
 import { Play } from "lucide-react";
-import { PLACES_TOTAL, scarcityLine } from "@/lib/founding";
+import {
+  PILOT_CTA_LABEL,
+  PILOT_CTA_URL,
+  PILOT_DURATION,
+  PILOT_PLACES,
+  PILOT_PRICE,
+} from "@/lib/offer";
 
 function LaunchVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -50,18 +56,18 @@ export function Hero() {
         <div className="animate-reveal lg:col-span-7">
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-accent/40 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
             <span className="h-1.5 w-1.5 animate-pulse-dot rounded-full bg-primary" aria-hidden />
-            {PLACES_TOTAL} places fondateurs · accès anticipé
+            Cohorte pilote · {PILOT_PLACES} places
           </div>
 
           <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.02] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-            Le coach nutritionnel{" "}
-            <span className="text-primary text-glow-gold">qui te tient la main, chaque jour.</span>
+            Coach nutrition pour{" "}
+            <span className="text-primary text-glow-gold">sportifs gourmands.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Une IA personnelle qui te génère ton plan, l'adapte à ta vie réelle,
-            et te recadre quand tu dérives. Comme un coach humain, sauf qu'il est
-            dispo 24/7 et tient dans ta poche.
+            {PILOT_DURATION} pour manger mieux sans renoncer aux restos, aux
+            apéros et au plaisir. Un plan de repas ajusté chaque semaine, dans
+            une app faite pour ça.
           </p>
 
           <div className="mt-6 flex flex-wrap items-center gap-3 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
@@ -76,17 +82,14 @@ export function Hero() {
 
           <div className="mt-10 flex flex-col items-start gap-4">
             <a
-              id="founding-member"
-              href="https://buy.stripe.com/3cIcN7fuWg9g1NW5nQ4AU03"
-              target="_blank"
-              rel="noopener noreferrer"
+              href={PILOT_CTA_URL}
               className="group inline-flex items-center gap-2 rounded-full bg-primary px-6 py-4 font-display text-base font-semibold text-primary-foreground shadow-[0_10px_40px_-10px_var(--color-primary)] transition-transform hover:-translate-y-0.5"
             >
               <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
-              Devenir Founding Member : 19€/mois à vie
+              {PILOT_CTA_LABEL}
             </a>
             <p className="max-w-md font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-              {scarcityLine()} Tarif bloqué à vie, même après hausse publique.
+              {PILOT_PRICE} pour les {PILOT_DURATION}. {PILOT_PLACES} places seulement.
             </p>
           </div>
         </div>

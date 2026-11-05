@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { PILOT_CTA_URL } from "@/lib/offer";
 
 export function SiteHeader() {
   return (
@@ -11,12 +12,10 @@ export function SiteHeader() {
         </Link>
 
         <a
-          href="https://buy.stripe.com/3cIcN7fuWg9g1NW5nQ4AU03"
-          target="_blank"                           
-          rel="noopener noreferrer"
+          href={PILOT_CTA_URL}
           className="inline-flex items-center rounded-full bg-primary px-4 py-2 font-mono text-[11px] font-semibold uppercase tracking-wider text-primary-foreground transition-colors hover:bg-gold-bright"
         >
-          Devenir Founding Member
+          Candidater
         </a>
       </div>
     </header>

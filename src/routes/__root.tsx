@@ -78,18 +78,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#0B0907" },
-      { title: "Coach Skip — Le coach nutritionnel IA qui te pilote" },
+      { title: "Coach Skip : cohorte pilote de coaching nutrition" },
       {
         name: "description",
         content:
-          "IA personnelle qui génère ton plan nutrition, l'adapte chaque jour à ta vraie vie, 5x moins cher qu'un coach. Founding Member 19€/mois à vie.",
+          "Cohorte pilote de 5 places : 12 semaines de coaching nutrition pour sportifs gourmands, avec un plan de repas ajusté chaque semaine. 97 €.",
       },
-      { name: "author", content: "Gaspard — Coach Skip" },
-      { property: "og:title", content: "Coach Skip — Le coach nutritionnel IA qui te pilote" },
+      { name: "author", content: "Gaspard, Coach Skip" },
+      { property: "og:title", content: "Coach Skip : cohorte pilote de coaching nutrition" },
       {
         property: "og:description",
         content:
-          "IA personnelle qui génère ton plan nutrition, l'adapte chaque jour à ta vraie vie, 5x moins cher qu'un coach.",
+          "5 places, 12 semaines, 97 €. Manger mieux sans renoncer aux restos, aux apéros et au plaisir.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

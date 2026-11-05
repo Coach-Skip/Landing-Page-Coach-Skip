@@ -9,21 +9,22 @@ import { FoundingOffer } from "@/components/FoundingOffer";
 import { About } from "@/components/About";
 import { FAQ } from "@/components/FAQ";
 import { FinalCTA } from "@/components/FinalCTA";
+import { Candidature } from "@/components/Candidature";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Coach Skip - Le coach nutritionnel IA qui te pilote" },
+      { title: "Coach Skip : cohorte pilote de coaching nutrition" },
       {
         name: "description",
         content:
-          "IA personnelle qui génère ton plan nutrition, l'adapte chaque jour à ta vraie vie, 5x moins cher qu'un coach. Founding Member 19€/mois à vie.",
+          "Cohorte pilote de 5 places : 12 semaines de coaching nutrition pour sportifs gourmands, avec un plan de repas ajusté chaque semaine. 97 €.",
       },
-      { property: "og:title", content: "Coach Skip - Le coach nutritionnel IA qui te pilote" },
+      { property: "og:title", content: "Coach Skip : cohorte pilote de coaching nutrition" },
       {
         property: "og:description",
         content:
-          "IA personnelle qui génère ton plan nutrition, l'adapte chaque jour à ta vraie vie, 5x moins cher qu'un coach.",
+          "5 places, 12 semaines, 97 €. Manger mieux sans renoncer aux restos, aux apéros et au plaisir.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -45,6 +46,7 @@ function Index() {
         <About />
         <FAQ />
         <FinalCTA />
+        <Candidature />
       </main>
       <SiteFooter />
     </div>

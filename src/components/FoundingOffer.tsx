@@ -1,11 +1,16 @@
-import { ShieldCheck } from "lucide-react";
-import { PLACES_TOTAL, scarcityLine } from "@/lib/founding";
+import {
+  PILOT_CTA_LABEL,
+  PILOT_CTA_URL,
+  PILOT_DURATION,
+  PILOT_PLACES,
+  PILOT_PRICE,
+} from "@/lib/offer";
 
 const bonuses = [
   {
     n: "01",
-    title: "Coach Skip à 19€/mois à vie",
-    body: "Même si le prix public monte à 39€, 49€ ou 69€ dans 6 mois, tu restes bloqué·e à 19€/mois tant que tu es abonné·e.",
+    title: `${PILOT_PRICE} pour les ${PILOT_DURATION}`,
+    body: "Un prix unique pour toute la durée du programme.",
   },
   {
     n: "02",
@@ -14,33 +19,33 @@ const bonuses = [
   },
   {
     n: "03",
-    title: "Accès DM direct",
-    body: "Tu me ping, je réponds. Tes questions et tes retours passent en priorité.",
+    title: "Un suivi chaque semaine",
+    body: "Je regarde ton journal, j'ajuste ton plan et je réponds à tes questions. Tes retours passent en priorité.",
   },
   {
     n: "04",
-    title: "Tu demandes une fonction, je la priorise",
-    body: "Il te manque un format de logging, une intégration, un type de plan ? Tu me le dis, je l'arbitre en haut de la roadmap. Les Founding Members façonnent ce que Coach Skip devient.",
+    title: "Ton avis façonne la suite",
+    body: "À la fin, je te demande un retour honnête. Il sert à améliorer le programme pour les prochaines personnes.",
   },
 ];
 
 export function FoundingOffer() {
   return (
-    <section id="founding-member" className="border-t border-border py-24 sm:py-32">
+    <section id="offre" className="border-t border-border py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-3xl">
           <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-primary">
-            05 - Founding Member
+            05 - Cohorte pilote
           </div>
           <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            {PLACES_TOTAL} places. Le tarif Founding Member{" "}
-            <span className="text-primary">ne reviendra jamais.</span>
+            {PILOT_PLACES} places.{" "}
+            <span className="text-primary">Un tarif de lancement pour des retours honnêtes.</span>
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Coach Skip ouvre {PLACES_TOTAL} places fondateurs avant la sortie
-            publique. Je prends ces {PLACES_TOTAL} Founding Members pour
-            finaliser le produit avec eux. Tu obtiens un tarif et un accès que
-            personne d'autre n'aura ensuite.
+            Je lance une cohorte pilote de {PILOT_PLACES} personnes. Tu bénéficies
+            d'un tarif réduit et d'un suivi direct avec moi pendant {PILOT_DURATION}.
+            En échange, je te demande un avis honnête à la fin, pour améliorer le
+            programme.
           </p>
         </div>
 
@@ -52,7 +57,7 @@ export function FoundingOffer() {
             >
               <div className="flex items-baseline gap-3">
                 <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-primary">
-                  Bonus {b.n}
+                  Inclus {b.n}
                 </span>
               </div>
               <h3 className="mt-3 font-display text-xl font-bold leading-tight text-foreground">
@@ -65,36 +70,14 @@ export function FoundingOffer() {
 
         <div className="mt-12 flex flex-col items-start gap-3">
           <a
-            href="https://buy.stripe.com/3cIcN7fuWg9g1NW5nQ4AU03"
-            target="_blank"                           
-            rel="noopener noreferrer"
+            href={PILOT_CTA_URL}
             className="inline-flex items-center rounded-full bg-primary px-6 py-3.5 font-mono text-[12px] uppercase tracking-wider text-primary-foreground transition-transform hover:scale-[1.02]"
           >
-            → Devenir Founding Member : 19€/mois à vie
+            → {PILOT_CTA_LABEL}
           </a>
           <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-            {scarcityLine()} Résiliation à tout moment via Stripe.
+            {PILOT_PRICE} pour les {PILOT_DURATION}. {PILOT_PLACES} places seulement.
           </p>
-        </div>
-
-        {/* Guarantee block */}
-        <div
-          className="mt-14 flex flex-col gap-4 rounded-2xl border-2 border-primary/40 p-6 sm:flex-row sm:items-start sm:gap-6 sm:p-8"
-          style={{ backgroundColor: "color-mix(in oklab, var(--color-primary) 8%, transparent)" }}
-        >
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
-            <ShieldCheck className="h-6 w-6" />
-          </div>
-          <div>
-            <h3 className="font-display text-xl font-bold leading-tight text-foreground sm:text-2xl">
-              Garantie 30 jours satisfait ou remboursé
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
-              Si dans les 30 premiers jours Coach Skip ne te convient pas, je te
-              rembourse intégralement. Sans question, sans formulaire à remplir.{" "}
-              <span className="text-foreground">Le risque est sur moi, pas sur toi.</span>
-            </p>
-          </div>
         </div>
       </div>
     </section>

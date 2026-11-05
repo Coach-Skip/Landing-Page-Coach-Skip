@@ -25,8 +25,8 @@ const html = `<!DOCTYPE html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coach Skip — Le coach nutritionnel IA qui te pilote</title>
-    <meta name="description" content="IA personnelle qui génère ton plan nutrition, l'adapte chaque jour à ta vraie vie, 5x moins cher qu'un coach. Founding Member 19€/mois à vie." />
+    <title>Coach Skip : cohorte pilote de coaching nutrition</title>
+    <meta name="description" content="Cohorte pilote de 5 places : 12 semaines de coaching nutrition pour sportifs gourmands, avec un plan de repas ajusté chaque semaine. 97 €." />
     ${cssFiles.map((f) => `<link rel="stylesheet" crossorigin href="/assets/${f}" />`).join("\n    ")}
     <script>${tsrBootstrap}</script>
   </head>

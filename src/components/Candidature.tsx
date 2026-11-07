@@ -20,7 +20,8 @@ async function submitToNetlify(form: HTMLFormElement) {
   new FormData(form).forEach((value, key) => {
     data.append(key, String(value));
   });
-  const res = await fetch("/__forms.html", {
+  // Netlify traite les envois JavaScript sur la page racine : le POST va vers "/".
+  const res = await fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: data.toString(),
